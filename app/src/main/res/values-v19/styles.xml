@@ -1,0 +1,11 @@
+<resources>>
+
+  <!--<style name="AppTheme.NoActionBar.TranslucentStatus" parent="AppTheme.NoActionBar">-->
+    <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--<item name="android:windowTranslucentNavigation">false</item>-->
+  <!--</style>-->
+
+  <dimen name="tool_bar_top_padding">24dp</dimen>
+  <dimen name="map_tool_bar_top_margin">32dp</dimen>
+
+</resources>

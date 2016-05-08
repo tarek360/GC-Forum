@@ -1,0 +1,196 @@
+<resources>
+
+  <string name="app_name">GC Forum</string>
+  <string name="event_name">Green Cities Forum</string>
+  <string name="event_address">The Pyramid Road, Egypt</string>
+  <string name="event_date">5–7 Sep 2017</string>
+
+  <!--Menu items-->
+  <string name="action_settings">Settings</string>
+  <string name="action_notification">Notifications</string>
+  <string name="action_logout">Logout</string>
+  <string name="action_search">Search</string>
+  <string name="action_remove">delete</string>
+  <string name="action_update">edit</string>
+  <string name="action_edit_profile">Edit profile</string>
+  <string name="action_create_group">\u0020 Create group</string>
+  <string name="action_create">\u0020 Create</string>
+
+  <string name="large_text">
+    "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+    "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+    "technologically advanced and open to imagination and magic."
+  </string>
+  <string-array name="tabsTitles">
+    <item>Attendances</item>
+    <item>Chat</item>
+  </string-array>
+
+  <!--Login Items-->
+  <!--<string name="name">Name</string>-->
+  <string name="email">e-mail</string>
+  <string name="password">Password</string>
+  <string name="login">Log in</string>
+
+  <string name="login_with_email">Log in with email</string>
+  <string name="login_with_facebook">Log in with facebook</string>
+  <string name="login_failed">Log in failed</string>
+
+  <string name="invalid_email_pass">Invalid e-mail or password</string>
+  <string name="email_taken">Email is taken</string>
+  <!--Login errors Items-->
+  <string name="error_invalid_user_name">Short name</string>
+  <string name="error_invalid_job_title">Short job title</string>
+  <string name="error_invalid_company">Short company name</string>
+  <string name="error_invalid_pass">Password at least 8 characters</string>
+  <string name="error_invalid_email">Invalid email</string>
+  <string name="error_invalid_phone">Short phone number</string>
+  <!-- errors Items-->
+  <string name="error_connection">Connection error</string>
+  <string name="error_server">Server error</string>
+  <string name="error_facebook">Facebook error</string>
+  <string name="error">error</string>
+  <!--Add & Edit & Remove errors Items-->
+  <string name="error_cant_add">you can not add</string>
+  <string name="error_cant_edit">you can not be edited</string>
+  <string name="error_cant_remove">you can not delete</string>
+
+  <!--Progress Dialog Items-->
+  <string name="progress_working">Processing…</string>
+  <string name="please_wait">Please wait…</string>
+  <string name="success">Done successfully</string>
+  <string name="try_again">Please try again!</string>
+
+
+  <!--Register Items-->
+  <string name="register">Sign up</string>
+  <string name="register_with_email">Sign up with email</string>
+  <string name="register_with_facebook">Sign up with facebook</string>
+  <string name="register_user_name">Full name</string>
+  <string name="register_user_job_title">Job title</string>
+  <string name="register_user_company">Company</string>
+  <string name="register_email">E-mail</string>
+  <string name="register_password">Password</string>
+  <string name="register_user_phone">Phone number</string>
+  <string name="register_user_photo">Photo</string>
+  <string name="register_success">Success</string>
+  <string name="register_upload_photo">Upload photo</string>
+  <string name="register_upload_photo_btn">{md-file-upload 24sp} \u0020 UPLOAD</string>
+  <string name="register_the_user">pharmacy</string>
+  <string name="register_the_store">store</string>
+  <string name="register_failed">Sign up failed</string>
+  <string name="register_upload_failed">Photo upload failed</string>
+
+  <!--unrelated items-->
+  <string name="ok">OK</string>
+  <string name="cancel">Cancel</string>
+  <string name="close">Close</string>
+  <string name="skip">SKIP</string>
+  <string name="call">Call</string>
+  <string name="phone_call">Phone call!</string>
+  <string name="phone_call_us_now">Call us now?</string>
+  <string name="or">or</string>
+  <string name="no_data">No data!</string>
+  <string name="no_chats">No chats</string>
+  <string name="no_notifications">No notifications</string>
+  <string name="notification">Notification</string>
+  <string name="speaker">Speaker</string>
+  <string name="set_profile_photo">Set Profile Photo</string>
+  <string name="max_file_size">Maximum upload file size: 3 MB</string>
+  <string name="file_bigger_than">File is bigger than 3 MB</string>
+  <string name="pick_another_photo">Pick another photo?</string>
+
+  <!--forget password items-->
+  <string name="forget_password">Forget Password!</string>
+  <string name="forget_password_enter_code">Enter Code</string>
+  <string name="forget_password_continue">Continue</string>
+  <string name="forget_password_hint">We sent a message to this email address. Enter the code
+    from
+    that message here.
+  </string>
+  <string name="forget_password_resend_code">Resend Code ?</string>
+  <string name="forget_password_sending_reset_code">Sending reset code.</string>
+  <string name="forget_password_setting_new_password">Setting new password</string>
+  <string name="forget_password_new_password">New password</string>
+  <string name="forget_password_error_invalid_reset_code">Invalid reset code</string>
+  <string name="forget_password_error_no_account_title">No account match that email.</string>
+  <string name="forget_password_error_no_account_content">Make sure you have entered the correct
+    email address.
+  </string>
+
+  <!--Request Dialog Items-->
+  <string name="dialog_agree">Agree</string>
+  <string name="dialog_disagree">Disagree</string>
+
+  <!-- facebook -->
+  <string name="facebook_app_id">136165266781348</string>
+
+
+  <!--photo picker-->
+  <string name="select_photo">Pick a photo</string>
+
+  <!-- Drawer Items -->
+  <string name="drawer_item_home">Home</string>
+  <string name="drawer_item_agenda">Agenda</string>
+  <string name="drawer_item_attendance">Attendance</string>
+  <string name="drawer_item_speakers">Speakers</string>
+  <string name="drawer_item_chat">Public Chat</string>
+  <string name="drawer_item_sponsors">Sponsors</string>
+  <string name="drawer_item_location">Location</string>
+  <string name="drawer_item_contact_us">Contact Us</string>
+  <string name="drawer_item_notifications">Notifications</string>
+  <string name="drawer_item_edit_profile">Edit profile</string>
+  <string name="schedule_spinner_day_1">Schedule Day 1</string>
+  <string name="schedule_spinner_day_2">Schedule Day 2</string>
+
+
+  <string name="error_invalid_url">Invalid website link</string>
+
+  <!--Contact us items-->
+  <string name="contact_us_name">Name</string>
+  <string name="contact_us_email">E-mail</string>
+  <string name="contact_us_subject">Subject</string>
+  <string name="contact_us_message">Type your message here!</string>
+  <string name="contact_us_sending">Sending…</string>
+  <string name="contact_us_send_btn">Send</string>
+  <string name="contact_us_failed">Sending failed</string>
+  <string name="contact_us_message_sent">Your message has been sent!</string>
+  <string name="contact_us_short_name">Short name</string>
+  <string name="contact_us_short_subject">Short subject</string>
+  <string name="contact_us_short_message">Short message</string>
+
+  <!--Edit Profile items-->
+  <string name="edit_profile_btn">Save</string>
+  <string name="edit_profile_dialog_title">Saving</string>
+  <string name="edit_profile_saving_failed">Saving failed</string>
+  <string name="edit_profile_get_profile">Getting your profile data</string>
+  <string name="edit_profile_saved_successfully">Profile has saved successfully</string>
+  <string name="edit_profile_try_again">Try again ?</string>
+  <string name="thanks">Thank you!</string>
+
+  <!--Chat Items-->
+  <string name="type_a_message">Type a message</string>
+  <string name="at_least_two_person">At least 2 persons must be selected</string>
+  <string name="chat_provide_group_subject">Please provide group subject</string>
+  <string name="chat_group_subject">Group subject</string>
+  <string name="chat_create_group_failed">Creation failed</string>
+  <string name="chat_creating_group">Creating group…</string>
+  <string name="chat_history">History</string>
+  <string name="chat_all">All</string>
+
+
+  <string name="gcm_defaultSenderId">980304887616</string>
+  <string name="title_activity_chat_group_creator">New Group</string>
+  <string name="version_info_title">Version info</string>
+  <string name="version_info_body">Version Name: \"%1$s\" \nVersion Code: %2$d \nPackage Name:
+    \"%3$s\"
+  </string>
+
+  <string name="group_info">Group info</string>
+  <string name="group_info_rename">Rename</string>
+  <string name="group_info_members">Group members</string>
+  <string name="group_rename">Rename group</string>
+  <string name="group_enter_new_subject">Enter new subject</string>
+
+  <!--%s Version Code %d  Package Name %s-->
+</resources>

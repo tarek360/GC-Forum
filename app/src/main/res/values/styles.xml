@@ -1,0 +1,43 @@
+<resources>
+  <!--MaterialDrawerTheme.Light.DarkToolbar-->
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="MaterialDrawerTheme.Light.DarkToolbar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="Widget.MyApp.HeaderBar.Spinner.Base"
+      parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+    <item name="android:background">?android:selectableItemBackground</item>
+    <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+    <item name="android:divider">@null</item>
+  </style>
+
+
+  <style name="Widget.MyApp.HeaderBar.Spinner"
+      parent="Widget.MyApp.HeaderBar.Spinner.Base">
+  </style>
+
+
+  <style name="TextInputLayoutAppearance" parent="TextAppearance.AppCompat">
+    <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorControlNormal">@color/accent</item>
+    <item name="colorControlActivated">@color/accent</item>
+  </style>
+
+
+  <dimen name="map_tool_bar_top_margin">6dp</dimen>
+
+
+  <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+    <item name="android:textColor">@android:color/transparent</item>
+    <item name="android:textSize">0sp</item>
+  </style>
+
+</resources>

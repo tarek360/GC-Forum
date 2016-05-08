@@ -1,0 +1,32 @@
+<resources>
+  <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+  <bool name="isTablet">true</bool>
+
+  <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+  <dimen name="activity_horizontal_margin">64dp</dimen>
+
+
+  <dimen name="login_card_margin">36dp</dimen>
+  <fraction name="login_card_width">75%</fraction>
+  <fraction name="login_card_width_half">35%</fraction>
+  <fraction name="login_card_btn">50%</fraction>
+
+  <dimen name="splash_login_layout_margin_top">128dp</dimen>
+
+  <!--splash text size (related items)-->
+  <dimen name="splash_title_text_size">32dp</dimen>
+  <dimen name="splash_year_text_size">42dp</dimen>
+  <dimen name="splash_address_text_size">24dp</dimen>
+
+  <!--item text size-->
+  <dimen name="item_title_text_size">16dp</dimen>
+  <dimen name="item_subTitle_text_size">14dp</dimen>
+
+
+  <dimen name="speaker_photo_width">160dp</dimen>
+
+</resources>

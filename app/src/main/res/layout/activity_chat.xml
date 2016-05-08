@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            tools:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            tools:text="Title"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+        />
+
+      </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messagesList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/footer"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/sendButtonCard"
+        app:cardBackgroundColor="@color/md_grey_50"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="2dp"
+        app:contentPaddingRight="8dp"
+        app:contentPaddingLeft="8dp"
+        app:contentPaddingTop="2dp"
+        app:contentPaddingBottom="2dp">
+
+      <EditText
+          android:id="@+id/messageEdit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textMultiLine"
+          android:hint="@string/type_a_message"
+          android:textColorHint="@color/md_grey_400"
+          android:maxLines="5"
+          android:theme="@style/TextInputLayoutAppearance"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sendButtonCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/primary_dark"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="2dp"
+        app:contentPaddingRight="2dp"
+        app:contentPaddingLeft="2dp"
+        app:contentPaddingTop="2dp"
+        app:contentPaddingBottom="2dp">
+
+      <com.joanzapata.iconify.widget.IconTextView
+          android:id="@+id/sendButton"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:text="{md-send}"
+          android:textSize="28sp"
+          android:textColor="@android:color/white"/>
+    </android.support.v7.widget.CardView>
+
+  </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

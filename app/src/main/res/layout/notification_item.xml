@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="0dp">
+
+  <LinearLayout
+      android:id="@+id/graphicLayout"
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:text="{md-notifications}"
+        android:background="@drawable/session_icon_bg"/>
+
+    <View
+        android:id="@+id/timeLine"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:minHeight="36dp"
+        android:background="@color/md_grey_400"
+        android:layout_marginTop="8dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/dataLayout"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginBottom="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Title"
+        android:textSize="14sp"
+        android:textColor="@color/md_black_1000"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        tools:text="9:00 AM - 10:00 AM"
+        android:textSize="12sp"
+        android:textColor="@color/md_grey_600"/>
+
+  </LinearLayout>
+</LinearLayout>

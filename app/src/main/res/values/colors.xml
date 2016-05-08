@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#03A9F4</color>
+  <color name="primary_dark">#0288D1</color>
+  <color name="primary_light">#B3E5FC</color>
+  <color name="accent">#795548</color>
+
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#727272</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#B6B6B6</color>
+
+
+  <color name="splash_login_bg_green_900">#8001579B</color>
+  <color name="splash_login_border_white">#33FFFFFF</color>
+
+
+</resources>
+
+    <!--100% — FF-->
+    <!--95% — F2-->
+    <!--90% — E6-->
+    <!--85% — D9-->
+    <!--80% — CC-->
+    <!--75% — BF-->
+    <!--70% — B3-->
+    <!--65% — A6-->
+    <!--60% — 99-->
+    <!--55% — 8C-->
+    <!--50% — 80-->
+    <!--45% — 73-->
+    <!--40% — 66-->
+    <!--35% — 59-->
+    <!--30% — 4D-->
+    <!--25% — 40-->
+    <!--20% — 33-->
+    <!--15% — 26-->
+    <!--10% — 1A-->
+    <!--5% — 0D-->
+    <!--0% — 00-->

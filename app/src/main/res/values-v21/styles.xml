@@ -1,0 +1,9 @@
+<resources>>
+
+  <style name="Widget.MyApp.HeaderBar.Spinner"
+      parent="Widget.MyApp.HeaderBar.Spinner.Base">
+    <item name="android:overlapAnchor">true</item>
+  </style>
+
+
+</resources>

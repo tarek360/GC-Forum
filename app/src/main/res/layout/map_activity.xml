@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+  <LinearLayout
+      android:id="@+id/mapLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/infoLayout"
+      android:visibility="invisible">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+  </LinearLayout>
+
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      app:layout_widthPercent="94%"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/map_tool_bar_top_margin"
+      app:cardBackgroundColor="@color/md_grey_50"
+      app:cardElevation="4dp"
+      app:cardCornerRadius="2dp"
+      app:contentPadding="1dp">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+  </android.support.v7.widget.CardView>
+
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"/>
+
+  <RelativeLayout
+      android:id="@+id/infoLayout"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:layout_alignParentBottom="true"
+      android:visibility="invisible">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/short_address"
+        tools:text="Event Venue"
+        android:textSize="20sp"
+        android:textColor="@color/md_black_1000"/>
+
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/short_address_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/title"
+        android:text="{mdi-map-marker}"
+        android:textSize="20sp"
+        android:textColor="@color/md_grey_500"/>
+
+
+    <TextView
+        android:id="@+id/short_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/short_address_icon"
+        android:layout_alignBaseline="@+id/short_address_icon"
+        android:layout_marginLeft="32dp"
+        tools:text="24 El-Tahrir St., Dokki, Egypt"
+        android:textSize="16sp"
+        android:textColor="@color/md_black_1000"/>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_below="@+id/short_address_icon"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignLeft="@id/short_address"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/phone_number_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginBottom="18dp"
+        android:text="{mdi-phone}"
+        android:textSize="20sp"
+        android:textColor="@color/md_grey_500"/>
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phone_number_icon"
+        android:layout_alignBaseline="@+id/phone_number_icon"
+        android:layout_alignLeft="@id/short_address"
+        tools:text="+201255522215"
+        android:textSize="16sp"
+        android:textColor="@color/md_black_1000"/>
+
+
+  </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

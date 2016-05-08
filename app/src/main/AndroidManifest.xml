@@ -1,0 +1,188 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.tarek360.gcforum">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-feature
+      android:name="android.hardware.camera.autofocus"
+      android:required="false"/>
+
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+  <permission
+      android:name="io.tarek360.gcforum.permission.C2D_MESSAGE"
+      android:protectionLevel="signature"/>
+
+  <uses-permission android:name="io.tarek360.gcforum.permission.C2D_MESSAGE"/>
+
+  <application
+      android:name=".App"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="false"
+      tools:replace="android:supportsRtl">
+
+    <activity
+        android:name=".ui.main.MainActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+
+    </activity>
+
+
+    <activity
+        android:name=".ui.map.MapActivity"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+
+    <activity
+        android:name=".ui.chat.ChatActivity"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.notificationCenter.NotificationsActivity"
+        android:launchMode="singleTop"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.notificationCenter.NotificationDetailsActivity"
+        android:label="@string/notification"
+        android:parentActivityName=".ui.notificationCenter.NotificationsActivity"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.notificationCenter.NotificationsActivity"/>
+    </activity>
+
+
+    <activity
+        android:name=".ui.speakers.SpeakersActivity"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.speakers.SpeakerDetailsActivity"
+        android:label="@string/speaker"
+        android:parentActivityName=".ui.speakers.SpeakersActivity"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.speakers.SpeakersActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.sessions.SessionsActivity"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.sponsors.SponsorsActivity"
+        android:parentActivityName=".ui.main.MainActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.main.MainActivity"/>
+    </activity>
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id"/>
+
+    <activity
+        android:name="com.facebook.FacebookActivity"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="API_KEY"/>
+
+    <service
+        android:name=".gcm.RegistrationIntentService"
+        android:exported="false"/>
+    <service
+        android:name=".gcm.MyInstanceIDListenerService"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.gms.iid.InstanceID"/>
+      </intent-filter>
+    </service>
+
+    <receiver
+        android:name="com.google.android.gms.gcm.GcmReceiver"
+        android:exported="true"
+        android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+
+        <category android:name="io.tarek360.gcforum"/>
+      </intent-filter>
+    </receiver>
+
+    <service
+        android:name=".gcm.GcmMessageHandler"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </service>
+
+    <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value="2b982b44f1e69588c7a0b3567b19349c01282e19"/>
+
+  </application>
+
+</manifest>

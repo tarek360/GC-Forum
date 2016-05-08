@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <bool name="isTablet">false</bool>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">12dp</dimen>
+  <dimen name="activity_vertical_margin">12dp</dimen>
+  <dimen name="text_margin">16dp</dimen>
+
+  <dimen name="login_card_margin">16dp</dimen>
+  <fraction name="login_card_width">90%</fraction>
+  <fraction name="login_card_width_half">40%</fraction>
+  <fraction name="login_card_btn">60%</fraction>
+  <fraction name="login_card_btn_half">30%</fraction>
+  <fraction name="login_card_btn_half_margin">10%</fraction>
+  <dimen name="splash_tab_padding_horz">22dp</dimen>
+  <dimen name="splash_tab_padding_vert">16dp</dimen>
+  <dimen name="splash_tab_indicator_margin">8dp</dimen>
+  <dimen name="splash_login_layout_margin_top">32dp</dimen>
+
+  <!--splash text size (related items)-->
+  <dimen name="splash_title_text_size">26dp</dimen>
+  <dimen name="splash_year_text_size">32dp</dimen>
+  <dimen name="splash_address_text_size">16dp</dimen>
+
+  <dimen name="fab_margin">16dp</dimen>
+
+  <dimen name="sponsor_item_space">4dp</dimen>
+
+  <!--item text size-->
+  <dimen name="item_title_text_size">14dp</dimen>
+  <dimen name="item_subTitle_text_size">12dp</dimen>
+  <dimen name="appbar_padding_top">8dp</dimen>
+
+  <dimen name="speaker_photo_width">96dp</dimen>
+
+
+</resources>
