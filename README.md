@@ -1,8 +1,8 @@
 # GC-Forum
 
 
-### Libraries used in this project
-
+### Credits
+GC-Forum uses the following open-source projects:
 - RxJava (https://github.com/ReactiveX/RxJava/)
 - Dagger2 (https://github.com/google/dagger/)
 - Retrofit2 (https://github.com/square/retrofit/)
